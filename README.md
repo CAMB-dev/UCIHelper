@@ -10,3 +10,5 @@ The first time you enter, the data set list will be downloaded automatically. If
 | search {keyword}  | Search keywords, fuzzy search is not supported |
 | getres {full dataset name}  | Get some basic information about the dataset |
 | exit  | Exit the program |
+
+This may the last thing I leave. Goodbye.
