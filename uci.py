@@ -10,7 +10,6 @@ x.field_names = ['Name','Area','Task','Types','DateDonated']
 
 print('''
 	UCI Datasets Helper.
-	This may the last thing I leave. Goodbye.
 	Please wait while initializing data
 	''')
 datas = None
