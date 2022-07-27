@@ -11,4 +11,4 @@ The first time you enter, the data set list will be downloaded automatically. If
 | getres {full dataset name}  | Get some basic information about the dataset |
 | exit  | Exit the program |
 
-This may the last thing I leave. Goodbye.
+This may the last thing before I leave in this world. Goodbye.
