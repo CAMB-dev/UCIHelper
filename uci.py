@@ -21,6 +21,7 @@ if os.path.exists('cache.json'):
 		if comm == 'y' or comm == 'yes':
 			datas = json.loads(requests.get('https://archive-beta.ics.uci.edu/api/datasets-donated/find?limit=999',verify=False).text)
 			print('Dataset list download successfully.')
+			break
 		elif comm == 'n' or comm == 'no':
 			f = open('cache.json','r')
 			datas = json.loads(f.read())
@@ -46,7 +47,7 @@ if datas['error'] == False and datas['statusCode'] == 200:
 			f = open('cache.json','w')
 			f.write(json.dumps(datas))
 			f.close()
-			print('Done. Try use command: listallc')
+			print('Done.')
 		if comm == 'listallc':
 			f = open('cache.json','r')
 			datas = json.loads(f.read())
@@ -89,6 +90,10 @@ if datas['error'] == False and datas['statusCode'] == 200:
 				print('Name: {0}'.format(item['Name']))
 				print('Abstract: {0}'.format(item['Abstract']))
 				print('DownloadURL: {0}'.format('https://archive.ics.uci.edu/ml/{0}'.format(item['URLFolder'].replace('../',''))))
+				print('Area: {0}'.format(item['Area']))
+				print('Task: {0}'.format(item['Task']))
+				print('Types: {0}'.format(item['Types']))
+				print('DateDonated: {0}'.format(item['DateDonated']))
 				print('User: {0}'.format(item['user']['user']))
 				print('AuthorName: {0} {1}'.format(item['user']['firstName'],item['user']['lastName']))
 		if comm == 'exit':
