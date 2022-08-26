@@ -1,5 +1,3 @@
-Need to install Python libraries: requests, prettytable
-
 The first time you enter, the data set list will be downloaded automatically. If you want to cache it, please use the cache command after the initialization is completed. The instructions contained in this program are as follows:
 
 |  command   | explain  |
